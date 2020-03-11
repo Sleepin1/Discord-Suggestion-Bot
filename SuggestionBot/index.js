@@ -1,4 +1,5 @@
 //Looking around? 
+// Version: 1.1 
 let fs = require('fs');
 const config = JSON.parse(fs.readFileSync("config.json", "utf-8"));
 const Discord = require("discord.js");
