@@ -98,7 +98,7 @@ client.on("message", message => {
                 .setColor(color)
                 .setTitle("👍 **SUGGESTON MADE**")
                 .setDescription(message.author+(" Has made a suggestion!"))
-                .setFooter(message.user.avatarURL)
+                .setFooter(bot.user.avatarURL)
                 .setTimestamp(new Date())
             return client.channels.get(sChannel).send(embed).then(sentEmbed => {
                 sentEmbed.react("👍").then(message.delete({ timeout: 6000 })).then(sentEmbed.react("👎")).then(message.channel.send(embedsent))
